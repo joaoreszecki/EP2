@@ -10,10 +10,10 @@ def define_posicoes(linha, coluna, orientacao, tamanho):
             coluna += 1
     return posicao
 # Questão 2:
-def preenche_frota(frota, nn, linha, coluna, orientacao, tamanho):
+def preenche_frota(frota, nome_navio, linha, coluna, orientacao, tamanho):
     posicao = define_posicoes(linha, coluna, orientacao, tamanho)
-    if nn in frota:
-        frota[nn].append(posicao)
+    if nome_navio in frota:
+        frota[nome_navio].append(posicao)
     else:
-        frota[nn] = [posicao]
+        frota[nome_navio] = [posicao]
     return frota
